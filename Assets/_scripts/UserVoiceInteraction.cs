@@ -14,7 +14,7 @@ public class UserVoiceInteraction : MonoBehaviour {
     // Use this for initialization
     void Start () {
         currentStep = 0;
-        ttsOutput.GiantStepQuestion();
+        ttsOutput.PoseLeapQuestion();
     }
 	
 	// Update is called once per frame
@@ -35,12 +35,14 @@ public class UserVoiceInteraction : MonoBehaviour {
             armstrongSource.clip = armstrong0;
             armstrongSource.Play();
 
-        } else if (currentStep == 1)
+        }
+        else if (currentStep == 1)
         {
             armstrongSource.clip = armstrong1;
             armstrongSource.Play();
         }
         currentStep++;
+
     }
 
 

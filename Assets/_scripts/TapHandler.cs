@@ -52,7 +52,6 @@ public class TapHandler : MonoBehaviour {
             if (FocusedObject.name == "Question3DText")
             {
                 Debug.Log("3D Text with the question has been tapped");
-                TextToSpeechObj.GiantStepQuestion();
                 //SceneManager.LoadScene("myscenename", LoadSceneMode.Additive);
             }
 

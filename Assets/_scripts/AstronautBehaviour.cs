@@ -53,8 +53,12 @@ public class AstronautBehaviour : MonoBehaviour {
                 myAudioManager.PlayAudioLadder();
             } else if (FocusedObject.name == "Earth")
             {
+
                 Debug.Log("You tapped earth");
                 GameObject QuestionTextInstance = Instantiate(QuestionText, GameObject.Find("Earth").transform);
+                TextToSpeechOutput ttso = QuestionTextInstance.GetComponent<TextToSpeechOutput>();
+                ttso.PoseLeapQuestion();
+
             } else if (FocusedObject.name =="Moon")
             {
                 Debug.Log("You tapped moon");

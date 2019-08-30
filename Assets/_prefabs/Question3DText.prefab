@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4739073804908828}
   - component: {fileID: 23877221427821798}
   - component: {fileID: 102544348878523384}
+  - component: {fileID: 114529837793721774}
   - component: {fileID: 65026227253052786}
   - component: {fileID: 114174171909451024}
   - component: {fileID: 82570055214984816}
@@ -86,17 +87,17 @@ BoxCollider:
   m_GameObject: {fileID: 1219125493697784}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 31.562534, y: 5.8367386, z: 5.630968}
-  m_Center: {x: 12.268206, y: -1.2905006, z: -0.9125185}
+  m_Size: {x: 40.739185, y: 5.836738, z: 0.27947366}
+  m_Center: {x: 16.856537, y: -1.2905005, z: 0.025984943}
 --- !u!82 &82570055214984816
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1219125493697784}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -157,7 +158,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -203,3 +204,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextToSpeechObj: {fileID: 0}
+--- !u!114 &114529837793721774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1219125493697784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eaf2830d28ea3b48b39e725ee70b8e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextToSpeak: Do you want to take a giant leap for mankind?
+  SpeakerAstronaut: {fileID: 0}

@@ -9,22 +9,22 @@ public class TextToSpeechOutput : MonoBehaviour {
     private TextToSpeech tts;
     public string TextToSpeak;
     public AudioSource SpeakerAstronaut;
-    public AudioSource Speaker3DText;
     
     // Use this for initialization
     void Start()
     {
-        tts = GetComponent<TextToSpeech>();
+        tts = GameObject.Find("Audio Manager").GetComponent<TextToSpeech>();
+        tts.AudioSource = GameObject.Find("Astronaut").GetComponent<AudioSource>();
         tts.Voice = TextToSpeechVoice.Mark;
+
     }
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
-    public void GiantStepQuestion()
+    public void PoseLeapQuestion()
     {
-        tts.AudioSource = Speaker3DText;
         tts.StartSpeaking(TextToSpeak);
     }
     
